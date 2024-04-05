@@ -9,7 +9,7 @@
 @import url('./header.css');
 
 :root {
-  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+  font-family: 'Monserrat';
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
@@ -22,4 +22,186 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
+}
+* {
+  box-sizing: border-box;
+}
+.pagelink {
+  display: inline-flex;
+  font-size: large;
+  margin: 20px 0;
+  padding: 8px 16px;
+  background-color: #614e83;
+  border-radius: 10px;
+  color: rgb(240, 248, 255);
+}
+.timer {
+  display: flex;
+  column-gap: 24px;
+}
+span {
+  display: flex;
+  justify-content: center;
+  letter-spacing: 0px;
+  font-size: large;
+  font-family: 'Montserrat';
+}
+span.value {
+  font-size: 40px;
+  line-height: 1.2;
+  font-weight: 400;
+}
+
+span.label {
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+button:disabled {
+  font-family: 'Montserrat';
+  font-weight: 500;
+  line-height: 1.5;
+  width: 75px;
+  height: 40px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  background-color: #cfcfcf;
+}
+button:hover {
+  background-color: #6c8cff;
+}
+button {
+  font-family: 'Montserrat';
+  font-weight: 500;
+  line-height: 1.5;
+  color: #ffffff;
+  width: 75px;
+  height: 40px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  background-color: #4e75ff;
+}
+
+input#datetime-picker.flatpickr-input {
+  padding-block: 16px;
+  padding: 0;
+  background-color: #ffffff;
+  color: #2e2f42;
+  text-indent: 16px;
+}
+
+#datetime-picker {
+  width: 272px;
+  height: 40px;
+  font-family: 'Montserrat';
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  border-radius: 4px;
+  border-color: #808080;
+  border-image: none;
+  border-style: solid;
+  border-width: 1px;
+  margin-bottom: 32px;
+}
+
+#datetime-picker:hover {
+  border-style: solid;
+  border-color: #000000;
+}
+
+input#datetime-picker.flatpickr-input:active {
+  border-width: 1px;
+  border-color: #4e75ff;
+  border-style: solid;
+}
+
+fieldset {
+  margin: 20px 0;
+  display: flex;
+  max-width: 360px;
+  column-gap: 30px;
+  padding: 0;
+  border-radius: 1px;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 4px;
+  border-color: #808080;
+}
+
+fieldset:hover {
+  border-width: 1px;
+  border-color: #000000;
+}
+
+.delay {
+  display: flex;
+  flex-direction: column;
+  font-family: 'Montserrat';
+  gap: 8px;
+}
+
+legend {
+  border-width: inherit;
+  padding: 0;
+  margin-left: 28px;
+  padding-left: 6px;
+  padding-right: 6px;
+  font-family: 'Montserrat';
+}
+
+.input-delay {
+  height: 40px;
+  border-radius: 4px;
+  border-style: solid;
+  border: 1px;
+  border-color: #808080;
+}
+
+input.input-delay {
+  border-style: solid;
+  max-width: 360px;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.fulfilled {
+  padding-top: 24px;
+  padding-bottom: 8px;
+  padding-left: 48px;
+}
+
+.rejected {
+  padding-top: 24px;
+  padding-bottom: 8px;
+  padding-left: 48px;
+}
+
+.create {
+  width: 360px;
+  height: 40px;
+  font-family: 'Montserrat';
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.create:hover {
+  background-color: #6c8cff;
+}
+input[type='radio' i] {
+  background-color: initial;
+  cursor: pointer;
+  appearance: auto;
+  box-sizing: border-box;
+  margin: 3px 3px 0px 5px;
+  padding: initial;
+  border: initial;
+}
+
+.pagelink:hover {
+  background-color: #6c8cff;
 }
